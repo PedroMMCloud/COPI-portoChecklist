@@ -20,9 +20,9 @@ from sqlalchemy.orm import Mapped, mapped_column, relationship
 from database.database import Base
 
 
-# --------------------------------------------------------------------------- #
+# -------------------- #
 # Enumerações
-# --------------------------------------------------------------------------- #
+
 class RespostaEnum(str, enum.Enum):
     SIM = "SIM"
     NAO = "NAO"
@@ -36,9 +36,9 @@ class StatusChecklist(str, enum.Enum):
     CANCELADA = "CANCELADA"
 
 
-# --------------------------------------------------------------------------- #
+# ------------------------ #
 # Catálogo dos 23 itens de inspeção: (número, descrição, crítico)
-# --------------------------------------------------------------------------- #
+
 ITENS_CHECKLIST: list[tuple[int, str, bool]] = [
     (1, "Cinto de segurança, OK?", True),
     (2, "Botões de controle, funcionando?", True),
@@ -69,9 +69,9 @@ ITENS_CHECKLIST: list[tuple[int, str, bool]] = [
 TOTAL_ITENS = len(ITENS_CHECKLIST)
 
 
-# --------------------------------------------------------------------------- #
+# ----------------- #
 # Checklist (dados gerais da inspeção)
-# --------------------------------------------------------------------------- #
+
 class Checklist(Base):
     __tablename__ = "checklists"
 
@@ -165,9 +165,9 @@ class Checklist(Base):
         )
 
 
-# --------------------------------------------------------------------------- #
+# ----------------- #
 # ChecklistResposta (um registro por item inspecionado)
-# --------------------------------------------------------------------------- #
+
 class ChecklistResposta(Base):
     __tablename__ = "checklist_respostas"
 

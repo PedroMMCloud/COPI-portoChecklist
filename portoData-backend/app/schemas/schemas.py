@@ -39,9 +39,9 @@ from pydantic import (
 TOTAL_ITENS = 23
 
 
-# --------------------------------------------------------------------------- #
+# -------------------- #
 # Enumerações
-# --------------------------------------------------------------------------- #
+
 class RespostaEnum(str, enum.Enum):
     SIM = "SIM"
     NAO = "NAO"
@@ -55,9 +55,9 @@ class StatusChecklist(str, enum.Enum):
     CANCELADA = "CANCELADA"
 
 
-# --------------------------------------------------------------------------- #
+# ------------- #
 # Tipos reutilizáveis
-# --------------------------------------------------------------------------- #
+
 # Decimal é serializado como número (e não como string) no JSON de saída.
 _como_numero = PlainSerializer(float, return_type=float, when_used="json")
 
@@ -69,9 +69,9 @@ PercentualCombustivel = Annotated[
 ]
 
 
-# --------------------------------------------------------------------------- #
+# ----------------------------- #
 # Regras de obrigatoriedade por status
-# --------------------------------------------------------------------------- #
+
 CAMPOS_PARA_PREENCHIDA = (
     "codigo_formulario",
     "versao",
@@ -130,9 +130,9 @@ def verificar_requisitos_do_status(
         )
 
 
-# --------------------------------------------------------------------------- #
+# ----------------------- #
 # Funções auxiliares de validação
-# --------------------------------------------------------------------------- #
+
 def _vazio_para_none(valor: Any) -> Any:
     """Converte texto vazio (ou só espaços) em None."""
     if isinstance(valor, str) and not valor.strip():
@@ -170,9 +170,9 @@ def _sem_itens_duplicados(respostas: Optional[list["RespostaCreate"]]):
     return respostas
 
 
-# --------------------------------------------------------------------------- #
+# ------------------------------- #
 # Respostas
-# --------------------------------------------------------------------------- #
+
 class RespostaCreate(BaseModel):
     """Resposta a um item da inspeção (enviada pelo cliente)."""
 
@@ -217,9 +217,9 @@ class RespostaResponse(BaseModel):
         return _normalizar_enum(v)
 
 
-# --------------------------------------------------------------------------- #
+# ------------------------- #
 # Checklist
-# --------------------------------------------------------------------------- #
+
 class ChecklistCampos(BaseModel):
     """
     Campos gerais da checklist, todos opcionais para permitir rascunhos.
