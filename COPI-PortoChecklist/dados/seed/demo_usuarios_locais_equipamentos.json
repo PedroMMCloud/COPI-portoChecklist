@@ -1,0 +1,43 @@
+{
+  "aviso": "Dados SOMENTE para demonstração. Nunca usar em produção.",
+  "usuarios": [
+    {
+      "matricula": "1001",
+      "nome": "João Silva",
+      "papel": "OPERADOR",
+      "pin": "1234"
+    },
+    {
+      "matricula": "1002",
+      "nome": "Maria Souza",
+      "papel": "OPERADOR",
+      "pin": "1234"
+    },
+    {
+      "matricula": "9001",
+      "nome": "Administrador",
+      "papel": "ADMIN",
+      "pin": "0000"
+    }
+  ],
+  "locais": [
+    {
+      "nome": "Cais 99"
+    },
+    {
+      "nome": "Cais 100"
+    }
+  ],
+  "equipamentos": [
+    {
+      "identificacao": "GUINDASTE-280",
+      "observacao": "confirmar identificação exata no papel"
+    },
+    {
+      "identificacao": "GUINDASTE-281"
+    },
+    {
+      "identificacao": "GUINDASTE-282"
+    }
+  ]
+}

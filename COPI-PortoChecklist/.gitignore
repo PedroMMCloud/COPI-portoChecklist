@@ -1,0 +1,14 @@
+.env
+*.db
+/data/
+__pycache__/
+.pytest_cache/
+.venv/
+*.jks
+*.keystore
+key.properties
+.dart_tool/
+build/
+.idea/
+.vscode/
+.DS_Store

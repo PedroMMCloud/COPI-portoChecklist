@@ -1,0 +1,170 @@
+{
+  "codigo": "FOR-OPP-0017",
+  "versao": 6,
+  "data_versao": "2025-10-23",
+  "titulo": "Check-List Diário de Guindaste",
+  "aviso": "Campo 'critico' é PROVISÓRIO (exemplo). Validar com o cliente quais itens estão em negrito no papel.",
+  "itens": [
+    {
+      "numero": 1,
+      "descricao": "Cinto de segurança, OK?",
+      "critico": true,
+      "reescrito_do_papel": false,
+      "permite_na": true
+    },
+    {
+      "numero": 2,
+      "descricao": "Botões de controle, funcionando?",
+      "critico": true,
+      "reescrito_do_papel": false,
+      "permite_na": true
+    },
+    {
+      "numero": 3,
+      "descricao": "Sistema de comunicação (rádio e megafone), OK?",
+      "critico": true,
+      "reescrito_do_papel": false,
+      "permite_na": true
+    },
+    {
+      "numero": 4,
+      "descricao": "Alerta sonoro - sirene, OK?",
+      "critico": true,
+      "reescrito_do_papel": false,
+      "permite_na": true
+    },
+    {
+      "numero": 5,
+      "descricao": "Buzina funciona normalmente?",
+      "critico": true,
+      "reescrito_do_papel": false,
+      "permite_na": true
+    },
+    {
+      "numero": 6,
+      "descricao": "Botões de emergência, OK?",
+      "critico": true,
+      "reescrito_do_papel": false,
+      "permite_na": true
+    },
+    {
+      "numero": 7,
+      "descricao": "Freio de emergência em condições?",
+      "critico": true,
+      "reescrito_do_papel": false,
+      "permite_na": true
+    },
+    {
+      "numero": 8,
+      "descricao": "Freios em boas condições de uso?",
+      "critico": true,
+      "reescrito_do_papel": false,
+      "permite_na": true
+    },
+    {
+      "numero": 9,
+      "descricao": "Limpador de para-brisa funcionando?",
+      "critico": true,
+      "reescrito_do_papel": false,
+      "permite_na": true
+    },
+    {
+      "numero": 10,
+      "descricao": "Inspeção visual (patolas, pneus e vazamentos), OK?",
+      "critico": false,
+      "reescrito_do_papel": false,
+      "permite_na": true
+    },
+    {
+      "numero": 11,
+      "descricao": "Painel de comando exibe todas as informações?",
+      "critico": false,
+      "reescrito_do_papel": false,
+      "permite_na": true
+    },
+    {
+      "numero": 12,
+      "descricao": "Nível de combustível, OK?",
+      "critico": false,
+      "reescrito_do_papel": false,
+      "permite_na": true
+    },
+    {
+      "numero": 13,
+      "descricao": "Nível de água no radiador, OK?",
+      "critico": false,
+      "reescrito_do_papel": false,
+      "permite_na": true
+    },
+    {
+      "numero": 14,
+      "descricao": "Nível de óleo do motor, OK?",
+      "critico": false,
+      "reescrito_do_papel": false,
+      "permite_na": true
+    },
+    {
+      "numero": 15,
+      "descricao": "Nível de óleo da transmissão, OK?",
+      "critico": false,
+      "reescrito_do_papel": false,
+      "permite_na": true
+    },
+    {
+      "numero": 16,
+      "descricao": "Nível de óleo hidráulico, OK?",
+      "critico": false,
+      "reescrito_do_papel": false,
+      "permite_na": true
+    },
+    {
+      "numero": 17,
+      "descricao": "Sistema hidráulico SEM vazamentos de óleo?",
+      "critico": false,
+      "reescrito_do_papel": true,
+      "permite_na": true
+    },
+    {
+      "numero": 18,
+      "descricao": "Funcionamento do grab, cabos de aço?",
+      "critico": false,
+      "reescrito_do_papel": false,
+      "permite_na": true
+    },
+    {
+      "numero": 19,
+      "descricao": "Lataria SEM avarias?",
+      "critico": false,
+      "reescrito_do_papel": true,
+      "permite_na": true
+    },
+    {
+      "numero": 20,
+      "descricao": "Extintor de incêndio com data de validade vigente?",
+      "critico": false,
+      "reescrito_do_papel": false,
+      "permite_na": true
+    },
+    {
+      "numero": 21,
+      "descricao": "Extintor pressurizado? Está em suporte adequado?",
+      "critico": false,
+      "reescrito_do_papel": false,
+      "permite_na": true
+    },
+    {
+      "numero": 22,
+      "descricao": "Pneus em boas condições?",
+      "critico": false,
+      "reescrito_do_papel": false,
+      "permite_na": true
+    },
+    {
+      "numero": 23,
+      "descricao": "Ar condicionado em condições de uso?",
+      "critico": false,
+      "reescrito_do_papel": false,
+      "permite_na": true
+    }
+  ]
+}

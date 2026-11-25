@@ -1,0 +1,38 @@
+ID|Titulo|Time|Dia|Tam|Prioridade|Criterio
+PO-01|Congelar premissas e contrato v0.2 com a equipe|PO|D1|P|MUST|Todos leram 00-contrato e confirmaram a stack
+PO-02|Enviar perguntas ao cliente (críticos, itens 17/19, aparelhos, internet)|PO|D1|P|MUST|Lista enviada
+PO-03|Checkpoint fim do D2: fatia ponta a ponta funciona?|PO|D2|P|MUST|Decisão de corte registrada
+PO-04|Roteiro da demo e ensaio geral|PO|D4|M|MUST|Demo roda 2x seguidas sem falha
+PO-05|Aceite final e backlog da fase 2|PO|D4|P|MUST|Backlog registrado
+BE-01|Rodar o ambiente local (venv + uvicorn) e /health|BE|D1|P|MUST|health responde em localhost:8000
+BE-02|Modelos + seed (usuários, locais, equipamentos, template 23 itens)|BE|D2|M|MUST|Seed idempotente; PIN com hash
+BE-03|Login com JWT e papéis OPERADOR/ADMIN|BE|D2|M|MUST|401/403 corretos em testes
+BE-04|GET /template e GET /lookups|BE|D2|P|MUST|App baixa os 23 itens
+BE-05|PUT /checklists/{id} (criar/editar idempotente) + validações RN01-RN06 + impedimento|BE|D2|G|MUST|Fixture aceito com impedido=true; mesmo id 2x = 1 registro
+BE-06|GET /checklists (filtros, contadores, RN13) e GET /checklists/{id} com eventos|BE|D3|M|MUST|Operador só vê os seus; admin vê todos
+BE-07|POST /checklists/{id}/vistar|BE|D3|P|MUST|Só admin; 409 se já vistado
+BE-08|POST /checklists/{id}/solicitar-correcao com motivo obrigatório|BE|D3|P|MUST|Só admin; só em ENVIADO
+BE-09|Eventos + snapshot de revisão em toda edição; trava após VISTADO|BE|D4|M|MUST|Edição gera revisao 2, editado=true, 1 snapshot, 1 evento
+BE-10|GET /equipamentos/{id}/ultimo-horimetro|BE|D3|P|MUST|Retorna último final ou null
+BE-11|Testes automatizados com o fixture (11 casos do PRD)|BE|D3|M|MUST|pytest verde
+BE-12|Servidor da demo acessível pelos 2 aparelhos (mesmo Wi-Fi/hotspot, porta liberada) + seed de demo. Docker opcional|BE|D4|M|MUST|App em aparelho real fala com a API
+FE-01|Criar projeto Flutter, estrutura, URL configurável e modo mock|FE|D1|M|MUST|App abre em aparelho/emulador
+FE-02|Login único + roteamento por perfil|FE|D2|M|MUST|Operador e admin veem telas diferentes
+FE-03|Banco local: cache de template, lookups, checklists e fila|FE|D2|G|MUST|Dados sobrevivem a fechar o app
+FE-04|Tela de cabeçalho com validações e sugestões|FE|D2|M|MUST|Fixture preenchível; máscara do horímetro
+FE-05|Tela de itens 1-23 (S/N/N-A, observação, progresso)|FE|D2|G|MUST|23 itens em menos de 5 min; rascunho recuperado
+FE-06|Envio online via PUT (checkpoint D2)|FE|D2|M|MUST|Fixture chega ao servidor e aparece na lista do admin
+FE-07|Marcar tudo OK (confirmação, selos lote/manual, só S em itens sem resposta)|FE|D3|M|MUST|Regra RN12 cumprida
+FE-08|Alerta de impedimento|FE|D3|P|MUST|Item crítico com N dispara a tela
+FE-09|Finalização: resumo, assinatura e metadados de preenchimento|FE|D3|M|MUST|Não envia sem assinatura nem horímetro válido
+FE-10|Fila offline + sincronização + indicador de pendência|FE|D3|G|MUST|Modo avião, depois internet = 1 registro no servidor
+FE-11|Admin: lista com contadores, filtro e atualização a cada 15 s|FE|D3|M|MUST|Impedidos no topo
+FE-12|Admin: detalhe completo + Vistar|FE|D3|G|MUST|Mostra os 23 itens, assinatura, metadados; vistado trava
+FE-13|Solicitar correção; operador vê motivo, edita, Confirmo as correções, selo Editado, linha do tempo|FE|D4|G|MUST|Fluxo completo do roteiro da demo
+FE-14|APK de release em 2 aparelhos reais (permissão INTERNET + HTTP da demo, ver app/README) e teste em modo avião|FE|D4|M|MUST|Roteiro roda nos 2 aparelhos com APK de release
+DA-01|Conferir seed dos 23 itens com o papel original|DA|D1|P|MUST|Divergências listadas
+DA-02|Seed de demo (usuários, equipamentos, locais, 3 checklists de exemplo)|DA|D2|M|MUST|Carrega com um comando
+DA-03|Fixtures: caso da foto e variações (sem problema, crítico, editado)|DA|D2|P|MUST|Usados nos testes de BE e FE
+DA-04|Roteiro da demo passo a passo|DA|D2|P|MUST|PO aprova
+DA-05|Teste em 2 aparelhos (online, offline, volta da conexão) e bugs como issues|DA|D3|M|MUST|Bugs priorizados
+DA-06|Ensaio com cronômetro e vídeo de plano B|DA|D4|M|MUST|Demo em 5-7 min; vídeo gravado

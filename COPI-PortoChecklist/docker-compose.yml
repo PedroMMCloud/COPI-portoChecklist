@@ -1,0 +1,13 @@
+# OPCIONAL: só para deploy/portabilidade. A equipe não precisa de Docker no dia a dia.
+services:
+  api:
+    build: ./backend
+    env_file: .env
+    environment:
+      DATABASE_URL: sqlite:////data/checklist.db   # dentro do contêiner
+      SEED_DIR: /dados/seed
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/data
+      - ./dados:/dados:ro   # seeds (usado por scripts/seed.py)

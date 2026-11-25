@@ -1,0 +1,156 @@
+{
+  "descricao": "Caso extraído da foto do papel (FOR-OPP-0017 v5). Usar em testes e na demo.",
+  "id": "0b8f6d0e-2f1c-4c58-9a57-1c3a5e0d7c11",
+  "operador_matricula": "1001",
+  "equipamento": "GUINDASTE-280",
+  "local": "Cais 99",
+  "data_turno": "2026-11-03",
+  "turno": "T_20_02",
+  "navio": null,
+  "horimetro_inicial": 36466.1,
+  "horimetro_final": 36470.8,
+  "combustivel_pct": 95,
+  "hora_entrada": "20:00",
+  "hora_saida": "02:00",
+  "observacao_geral": "Lança do guindaste está cortando",
+  "usou_lote": true,
+  "itens_marcados_lote": 23,
+  "itens_alterados_apos_lote": 3,
+  "inicio_preenchimento_em": "2026-11-03T23:02:10Z",
+  "finalizado_em": "2026-11-03T23:03:40Z",
+  "duracao_segundos": 90,
+  "respostas": [
+    {
+      "item_numero": 1,
+      "resposta": "N",
+      "origem": "MANUAL",
+      "observacao": "Não tem"
+    },
+    {
+      "item_numero": 2,
+      "resposta": "S",
+      "origem": "LOTE"
+    },
+    {
+      "item_numero": 3,
+      "resposta": "S",
+      "origem": "LOTE"
+    },
+    {
+      "item_numero": 4,
+      "resposta": "S",
+      "origem": "LOTE"
+    },
+    {
+      "item_numero": 5,
+      "resposta": "S",
+      "origem": "LOTE"
+    },
+    {
+      "item_numero": 6,
+      "resposta": "S",
+      "origem": "LOTE"
+    },
+    {
+      "item_numero": 7,
+      "resposta": "S",
+      "origem": "LOTE"
+    },
+    {
+      "item_numero": 8,
+      "resposta": "S",
+      "origem": "LOTE"
+    },
+    {
+      "item_numero": 9,
+      "resposta": "S",
+      "origem": "LOTE"
+    },
+    {
+      "item_numero": 10,
+      "resposta": "N",
+      "origem": "MANUAL",
+      "observacao": "Patola 1 e 3 com vazamento"
+    },
+    {
+      "item_numero": 11,
+      "resposta": "S",
+      "origem": "LOTE"
+    },
+    {
+      "item_numero": 12,
+      "resposta": "S",
+      "origem": "LOTE"
+    },
+    {
+      "item_numero": 13,
+      "resposta": "S",
+      "origem": "LOTE"
+    },
+    {
+      "item_numero": 14,
+      "resposta": "S",
+      "origem": "LOTE"
+    },
+    {
+      "item_numero": 15,
+      "resposta": "S",
+      "origem": "LOTE"
+    },
+    {
+      "item_numero": 16,
+      "resposta": "S",
+      "origem": "LOTE"
+    },
+    {
+      "item_numero": 17,
+      "resposta": "S",
+      "origem": "LOTE"
+    },
+    {
+      "item_numero": 18,
+      "resposta": "S",
+      "origem": "LOTE"
+    },
+    {
+      "item_numero": 19,
+      "resposta": "S",
+      "origem": "LOTE"
+    },
+    {
+      "item_numero": 20,
+      "resposta": "S",
+      "origem": "LOTE"
+    },
+    {
+      "item_numero": 21,
+      "resposta": "S",
+      "origem": "LOTE"
+    },
+    {
+      "item_numero": 22,
+      "resposta": "N",
+      "origem": "MANUAL",
+      "observacao": "Calibrar pneus"
+    },
+    {
+      "item_numero": 23,
+      "resposta": "S",
+      "origem": "LOTE"
+    }
+  ],
+  "esperado": {
+    "impedido": true,
+    "itens_com_problema": [
+      1,
+      10,
+      22
+    ],
+    "itens_criticos_com_problema": [
+      1,
+      10,
+      22
+    ],
+    "status_apos_envio": "ENVIADO"
+  }
+}
